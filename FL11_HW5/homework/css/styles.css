@@ -1,0 +1,428 @@
+
+body {
+  font-family: roboto;
+}
+.post-1 {
+	background: #B71757;
+}
+.post-2 {
+	background: #0D7E71;
+}
+.post-3 {
+	background: #b1660e;
+}
+.post-4 {
+	background: #d12767;
+}
+.post-5 {
+	background: #2d95bb;
+}
+
+/* Your styles go here */
+
+p, h1, h2, h3, h4, figure, div, figcaption {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0b192f;
+  font-family: roboto;
+}
+
+.resize {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 35px 25px 40px;
+  background-color: #162b4d;
+  margin-bottom: 25px;
+}
+
+h1 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 32px;
+  font-weight: 300;
+  color: white;
+}
+
+h1 span {
+  font-size: 32px;
+  color: rgb(209, 40, 90);
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  flex: 0 1 50%;
+  
+}
+
+header ul li a {
+  text-decoration: none;
+  padding-right:25px; 
+  padding-left:25px;
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  width: 74.6428%;
+}
+
+main figure {
+  display: flex;
+}
+
+main figure:nth-child(even) .image {
+  order: 1;
+}
+
+main figure .image {
+  flex: 0 1 50%;
+}
+
+main figure .image img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+main figure figcaption {
+  flex: 0 1 50%;
+  position: relative;
+  padding: 50px; 
+  text-align: left;
+}
+
+main figure figcaption h2 {
+  padding-bottom: 40px;
+  font-size: 32px;
+  font-weight: 100;
+  color: white;
+}
+
+main figure .date, main .post-5 .date{
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 50px;
+  font-weight: 200;
+  text-align:center;
+  line-height: 1em;
+}
+
+main figure .date span, main .post-5 .date span {
+  display: block;
+  font-size: 30px;
+  line-height: 1.4em;
+}
+
+
+.post-5 h2 {
+  font-size: 32px;
+  font-weight: 100;
+  color: white;
+}
+
+.post-5 p {
+  font-size: 14px;
+  color: rgba(233, 233, 233, 0.7);
+}
+
+main figure figcaption p{
+  font-size: 14px;
+  color: rgba(233, 233, 233, 0.7);
+}
+
+main figure figcaption:nth-child(odd){
+  text-align: right;
+}
+
+
+.post1 {
+  background-color:#B71757;
+}
+
+.post2 {
+  background-color:#0D7E71;
+}
+
+.post3 {
+  background-color:#b1660e;
+}
+
+.post4 {
+  background-color:#d12767;
+}
+
+main > div.post-5 {
+  padding: 50px 140px 35px 45px;
+  order: 1;
+  background-color: #2d95bb;
+  position: relative;
+}
+
+aside {
+  width: 23.5714%;
+}
+
+aside figure {
+  margin-bottom: 25px;
+}
+
+aside figcaption {
+  padding: 45px 40px 50px;
+  background-color: white;
+}
+
+aside figcaption h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+aside figcaption p{
+  font-size: 10px;
+  color: rgb(104, 135, 171);
+}
+
+aside img {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+footer {
+  padding: 50px 35px 40px 35px;
+  display: flex;
+  background-color: #162b4d;
+  color: rgb(46, 89,160);
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.footer-content-left {
+  justify-content: flex-start;
+}
+
+.footer-content-right {
+  justify-content: flex-end;
+}
+
+
+
+
+
+
+
+
+/*Планшет*/
+
+@media (max-width: 1400px) {
+  .resize {
+    max-width: 100%;
+    margin: 0 12px;
+  }
+
+  body {
+    margin: 0;
+    background-color: #0b192f;
+  }
+
+  header {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  h1 span {
+     font-size: 30px;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  main {
+    width: 56.9889%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+
+  main figure {
+    flex-wrap: wrap;
+  }
+
+  main figure .image {
+    flex-basis: 100%;
+  }
+
+  main figure:nth-child(even) .image {
+    order: 0;
+  }
+  
+  main figure figcaption {
+    flex-basis: 100%;
+  }
+
+  aside {
+    width: 40.3225%;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  aside p {
+    margin-bottom: 25px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 35px 40px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  
+
+
+}
+/*Моб телефон*/
+@media (max-width: 768px) {
+  .resize {
+    max-width: 100%;
+  }
+
+  body {
+    background-color: #0b192f;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+  
+  header {
+    padding: 35px 0 75px;
+    margin-bottom: 25px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+  }
+
+  h1 span {
+    font-size: 32px;
+    color: rgb(209, 40, 90);
+  }
+
+  h1 nav {
+    display: none;
+  }
+  
+  main {
+    width: 100%;
+    margin-right: 25px;
+    margin-bottom: 25px;
+  }
+  
+
+  aside {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  aside p {
+    margin-bottom: 25px;
+  }
+  
+  aside h2{
+
+  }
+  
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resize {
+    max-width: 100%;
+    margin: 0 12px;
+  }
+
+  body {
+    margin: 0;
+    background-color: #0b192f;
+  }
+  
+  header {
+    padding: 35px 0 75px;
+    margin-bottom: 25px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    color: white;
+  }
+  h1 span{
+   font-size: 32px;
+   color: rgb(209, 40, 90);
+  }
+
+  h1 nav{
+    display: none;
+  }
+  
+  main {
+    width: 100%;
+    margin: 0;
+  }
+  
+  aside {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  aside p {
+    margin-bottom: 25px;
+
+  }
+  aside h2{
+
+    
+  }
+  
+  footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
