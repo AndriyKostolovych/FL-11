@@ -1,0 +1,79 @@
+/* Your styles goes here */
+
+.max-label {
+  color: red;
+}
+
+.save-button {
+  display: none;
+}
+
+.edit-button, .delete-button, .status-button {
+  display: inline-block;
+}
+
+.max-label.hide {
+  display: none;
+}
+
+.list-item {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+}
+
+.list-item input:checked {
+  pointer-events: none;
+}
+
+.list-item input[type="text"] {
+  display: none;
+}
+
+.editable {
+  
+}
+
+.editable span,
+.editable .delete-button,
+.editable .status-button,
+.editable .edit-button {
+  display: none;
+}
+
+.editable input[type="text"],
+.editable .save-button {
+  display: inline-block;
+}
+
+.delete-button,
+.edit-button,
+.save-button,
+.add-button {
+  font-size: 25px;
+  padding: 0;
+  background: transparent;
+  color: skyblue;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+.delete-button {
+  margin: 0 0 0 auto;
+}
+
+.delete-button i {
+  font-size: inherit;
+}
+
+.delete-button:hover {
+  background: lightgray;
+}
+
+.action-input {
+  padding: 3px 10px;
+  font-size: 16px;
+}
